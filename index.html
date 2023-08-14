@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akul - Full Stack Developer Portfolio </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="title"><b><span>A</span>kul.</b></div>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#projects" onclick="closemenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My Name is <span class="purple">Akul Sharma</span>
+                <div>and I am a</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="images/Akul's Resume.pdf" target="_blank" title="Akul's Resume" download><button class="btn">Download Resume</button></a>
+                    <a href="https://github.com/akul-sharma" target="_blank"><button class="btn">Visit Github</button></a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="images/bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <!--------------------------- about --------------------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/about.png" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p class="desc">Welcome to my portfolio! I'm Akul Sharma, a enthusiastic and highly skilled Associate Software Engineer with 1 year of experience and a strong foundation in coding and full stack development . Through my work, I strive to bridge the gap between aesthetics and functionality,
+                            delivering solutions that leave a lasting impact on users.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('certificates')">Coding Profiles</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <span>Programming languages</span>
+                                <li>Java</li>
+                                <li>JavaScript, HTML & CSS</li>
+                                <li>C & C++</li>
+                                <li>Oops & Data Structure</li><br>
+                                <span>Frameworks</span>
+                                <li>Angular</li>
+                                <li>ReactJs</li>
+                                <li>Spring</li>
+                                <li>Bootstrap</li><br>
+                                <span>Database</span>
+                                <li>MySQL</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2018-2022</span> <br>Bachelor of Technology(Computer Science):- <b>7.87 CGPA</b> <br>Anand Engineering College, Agra</li>
+                                <br>
+                                <li><span>2017-2018</span><br>12th standard(PCM):- <b>87.4 %</b><br>Assisi Covent School, Etah </li>
+                                <br>
+                                <li><span>2015-2016</span><br> 10th standard(All Subjects):- <b>9.2 CGPA</b><br>Assisi Covent School, Etah </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="certificates">
+                            <ul>
+                                <li><span>Leetcode  <a href="https://leetcode.com/akul_sharma/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></span><br>Solved 600+ problems</li>
+                                <br>
+                                <li><span>Geeks for Geeks  <a href="https://auth.geeksforgeeks.org/user/akulsharmasharma" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></span><br>Solved 350+ problems </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- --------------------Projects------------------------------>
+        <div id="projects">
+            <div class="container">
+                <h1 class="subtitle">My Projects</h1>
+                <div class="project-list">
+                    <div class="project">
+                        <img src="images/project-1.jpg">
+                        <div class="layer">
+                            <h3>E-Mart Reviewing System</h3>
+                            <p>A full stack web application to post reviews on the products with login and register facilities.</p>
+                            <a href="https://github.com/akul-sharma/E-Mart" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img src="images/project-2.jpg">
+                        <div class="layer">
+                            <h3>Blog Post Application</h3>
+                            <p>A Web Application that allows users to post their blog, edit, delete and like them also.
+                            </p>
+                            <a href="https://github.com/akul-sharma/Blog-Post" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="see-more">See more</a>
+            </div>
+        </div>
+        <hr>
+        <!-- -------------------------------contact me-------------------------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="contact-row">
+                    <div class="leftcontact">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>akulsharma.sharma@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>+91-9528881042</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/akul-sharma-8713691ba" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/_akul_sharma_/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                        </div>
+                    </div>
+                    <div class="rightcontact">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button class="btn btn2" type="submit">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Myportfolio India, Inc. All rights reserved.</p>
+            </div>
+        </div>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var typed = new Typed('#element', {
+            strings: ['Full Stack Web Developer', 'Software Engineer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/9d38fde530.js" crossorigin="anonymous"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw9sklO2mgk0P9B-5jVAAVZY5ClDRmhZhrNXt6M13rCJLnog2eevIee5bWWtpHdtz1bhw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function() {
+                        msg.innerHTML = " "
+                    }, 4000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
